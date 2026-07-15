@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vielio - Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-fixed-variant": "#474649",
+                      "outline-variant": "#464554",
+                      "on-primary-container": "#f4f1ff",
+                      "on-tertiary-fixed-variant": "#723600",
+                      "primary-fixed-dim": "#c2c1ff",
+                      "inverse-on-surface": "#313032",
+                      "surface": "#131315",
+                      "primary-container": "#5e5ce6",
+                      "on-tertiary": "#502400",
+                      "inverse-primary": "#4d4ad5",
+                      "secondary-fixed-dim": "#c8c6c8",
+                      "on-secondary-fixed": "#1b1b1d",
+                      "primary-fixed": "#e2dfff",
+                      "surface-container-highest": "#353437",
+                      "on-surface": "#e5e1e4",
+                      "error-container": "#93000a",
+                      "on-surface-variant": "#c7c4d7",
+                      "error": "#ffb4ab",
+                      "secondary-container": "#474649",
+                      "surface-container-low": "#1c1b1d",
+                      "tertiary": "#ffb786",
+                      "inverse-surface": "#e5e1e4",
+                      "on-error": "#690005",
+                      "on-tertiary-fixed": "#311300",
+                      "tertiary-fixed-dim": "#ffb786",
+                      "on-tertiary-container": "#ffefe7",
+                      "on-primary-fixed": "#0c006b",
+                      "on-secondary-container": "#b6b4b7",
+                      "surface-container-lowest": "#0e0e10",
+                      "secondary-fixed": "#e4e2e4",
+                      "on-background": "#e5e1e4",
+                      "on-primary": "#1800a7",
+                      "secondary": "#c8c6c8",
+                      "on-primary-fixed-variant": "#332dbc",
+                      "surface-variant": "#353437",
+                      "on-secondary": "#303032",
+                      "surface-container": "#201f21",
+                      "surface-tint": "#c2c1ff",
+                      "tertiary-fixed": "#ffdcc6",
+                      "surface-bright": "#39393b",
+                      "on-error-container": "#ffdad6",
+                      "background": "#131315",
+                      "outline": "#918fa0",
+                      "primary": "#c2c1ff",
+                      "surface-container-high": "#2a2a2c",
+                      "tertiary-container": "#ae5600",
+                      "surface-dim": "#131315"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "stack-md": "24px",
+                      "stack-lg": "48px",
+                      "unit": "8px",
+                      "margin-desktop": "64px",
+                      "stack-sm": "12px",
+                      "gutter": "24px",
+                      "container-max": "1440px",
+                      "margin-mobile": "20px"
+              },
+              "fontFamily": {
+                      "headline-lg": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "display-lg": ["Inter"],
+                      "title-md": ["Inter"],
+                      "body-md": ["Inter"],
+                      "label-md": ["Inter"],
+                      "headline-lg-mobile": ["Inter"],
+                      "label-sm": ["Inter"]
+              },
+              "fontSize": {
+                      "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                      "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                      "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                      "title-md": ["20px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                      "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                      "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "500" }],
+                      "headline-lg-mobile": ["24px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                      "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "500" }]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        /* Custom scrollbar for horizontal scrolling areas to keep it sleek */
+        .hide-scroll::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scroll {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        
+        .glass-panel {
+            background: rgba(28, 28, 30, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen font-body-md antialiased overflow-x-hidden">
+<!-- Top Navigation (Generated from JSON Schema) -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-desktop h-20 bg-surface dark:bg-surface border-b border-surface-dim dark:border-surface-dim flat no shadows hidden md:flex">
+<!-- Left Side: Brand & Links -->
+<div class="flex items-center gap-stack-md">
+<!-- Brand -->
+<a class="font-headline-lg text-headline-lg font-bold text-primary dark:text-primary mr-stack-sm" href="#">
+                Vielio
+            </a>
+<!-- Navigation Links -->
+<ul class="flex items-center gap-stack-md ml-stack-lg font-body-md text-body-md">
+<li>
+<a class="text-primary dark:text-primary border-b-2 border-primary pb-1 font-medium transition-colors duration-200" href="#">
+                        Home
+                    </a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:opacity-80" href="#">
+                        Learning
+                    </a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:opacity-80" href="#">
+                        Live
+                    </a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:opacity-80" href="#">
+                        Library
+                    </a>
+</li>
+</ul>
+</div>
+<!-- Right Side: Search, Actions, Profile -->
+<div class="flex items-center gap-stack-md">
+<!-- Search Bar Area -->
+<div class="relative group hidden lg:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="bg-surface-container-low border border-outline-variant text-on-surface font-body-md rounded-full py-2 pl-10 pr-4 w-64 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors duration-200 placeholder-on-surface-variant/50" placeholder="Search courses, videos..." type="text"/>
+</div>
+<!-- Trailing Actions -->
+<button aria-label="Notifications" class="text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:opacity-80 relative">
+<span class="material-symbols-outlined text-[24px]">notifications</span>
+<span class="absolute top-0 right-0 w-2 h-2 bg-error rounded-full"></span>
+</button>
+<!-- Profile Image -->
+<button class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant hover:border-primary transition-colors duration-200 flex-shrink-0">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="A close-up portrait of a professional individual looking confidently at the camera. The lighting is moody and cinematic, complementing the dark minimalist UI. Deep blacks and subtle purple/indigo accents in the background to match the Vielio brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0E1nCSJHBEfTtNQy-WzrnL7Nyd_myt7r3lf8FXLmfURRgh7WRDQEt724232e7BsqVhhJv-rQi0esoNXyj-XNQKvirzxtFUd8EJp-ipdVR1Uck1__M4vA34HfP7zQniFi7rRc4F4eScT3-zKqfVIR1JqeRd9q8uDyrfNLY5mZVeP8dmz1ddzOgYUliG9UGZPR6cVZKaypg1A7M2XZhZzjQeULPxVyMadzR1gACjF709X5eBFj7lDxmv8XwKwkpEgR3M50zswDXstc"/>
+</button>
+</div>
+</nav>
+<!-- Mobile Top Header (Fallback for when md:flex hides the main nav) -->
+<header class="md:hidden fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile h-16 bg-surface border-b border-surface-dim">
+<a class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-primary" href="#">
+            Vielio
+        </a>
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant"><span class="material-symbols-outlined">search</span></button>
+<button class="w-8 h-8 rounded-full overflow-hidden border border-outline-variant">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="A close-up portrait of a professional individual looking confidently at the camera. The lighting is moody and cinematic, complementing the dark minimalist UI. Deep blacks and subtle purple/indigo accents in the background to match the Vielio brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqlUCbCQCOHdMvxvZV52wg_hJ4Y6oewuUmXpYabtESp3uR_zriqKy2942mk7o_gSUjy0xfkzL9REG47IknR1gWTo5mUbYYmboA3nsZVhrdNPJYWGjfNHjl_2eApHZ8ZKE6Md2l-WTFfPzDtiOPrI8qOBd2LenDJv_GUbSvg76_LuR86dNL-CuKVY81wdHBwBUf7wNHYtQVrPXrn5rsIIlFCm0FRPumh_aAXhSZlM9Csi7n0mvy_6ZR6rA-PaPtf4eVMv8-bvyzeY0"/>
+</button>
+</div>
+</header>
+<!-- Main Content Container -->
+<main class="w-full max-w-container-max mx-auto pt-20 md:pt-20 pb-32">
+<!-- Hero Section: Cinematic Full-width -->
+<section class="relative w-full h-[614px] min-h-[500px] mb-stack-lg group overflow-hidden">
+<!-- Background Image -->
+<div class="absolute inset-0 w-full h-full">
+<img alt="Hero background" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A stunning, cinematic wide shot of a modern, sleek web design interface being conceptualized. The scene features floating, glowing geometric UI elements over a dark, sophisticated workspace. High-end, dramatic lighting with deep shadows and subtle, electric indigo (#5e5ce6) highlights reflecting off glass surfaces. Premium tech aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqxS3-DX84fKHtwN3VB6vpx1YRhQTuKFDBsJ9g3N56882JPnMQVhI7lrgrejqBN8ui87mrP2BDjtNHFr9z5ePsKzABET54SFoyKTMa7fSdlnmBHKSDqlZU3sIOTb0T-RQYZ9ys3e7Llxqp_m0A1vH9zCQjg-AWnvr5q6MLbjYJjzWOD2GYUM87AGkJXft93nQUQ1G0VFTEe7KgvjqA1gcvMsSrTlw0_LxNSpiSyUAKegZC3XhHj9MBNIpDR9s3qOljmyk5l5FKD5w"/>
+<!-- Gradient Overlay for readability -->
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/50 to-transparent"></div>
+</div>
+<!-- Hero Content -->
+<div class="relative h-full flex flex-col justify-end px-margin-mobile md:px-margin-desktop pb-stack-lg w-full md:w-2/3 lg:w-1/2">
+<!-- Badge -->
+<div class="flex items-center gap-2 mb-stack-sm">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+<span class="font-label-md text-label-md text-primary tracking-wider">Continue your course</span>
+</div>
+<!-- Title -->
+<h1 class="font-display-lg text-display-lg text-on-surface mb-unit">Advanced Web UI Architecture</h1>
+<!-- Metadata -->
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md flex items-center gap-2">
+<span>Chapter 6 of 12</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>18 min left</span>
+</p>
+<!-- Actions -->
+<div class="flex flex-wrap items-center gap-stack-sm">
+<button class="bg-primary-container hover:bg-inverse-primary text-on-primary-container font-label-md text-label-md px-6 py-3 rounded-lg flex items-center gap-2 transition-colors duration-200">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                        Resume Course
+                    </button>
+<button class="bg-transparent border border-outline-variant hover:border-primary text-on-surface hover:text-primary font-label-md text-label-md px-6 py-3 rounded-lg transition-colors duration-200">
+                        Switch to learning mode
+                    </button>
+</div>
+</div>
+</section>
+<!-- Horizontal Rows Container -->
+<div class="flex flex-col gap-stack-lg px-margin-mobile md:px-margin-desktop">
+<!-- Row 1: Continue watching -->
+<section class="w-full">
+<h2 class="font-title-md text-title-md text-on-surface mb-stack-md">Continue watching</h2>
+<div class="flex gap-gutter overflow-x-auto hide-scroll pb-4 snap-x snap-mandatory">
+<!-- Card 1 (Video) -->
+<div class="relative flex-none w-[280px] md:w-[320px] group cursor-pointer snap-start">
+<!-- Thumbnail Area -->
+<div class="relative w-full aspect-video rounded-lg overflow-hidden mb-unit bg-surface-container-low transition-transform duration-300 group-hover:scale-[1.02]">
+<img alt="Video thumbnail" class="w-full h-full object-cover" data-alt="A dark, moody macro shot of a sleek computer keyboard with an electric indigo glow emitting from beneath the keys. Minimalist, premium tech aesthetic with shallow depth of field. High contrast between deep blacks and the single accent color." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzginz7CPNLxY1obH5lvHPI8Tkwc5taQlKjJpaBEKe3GqLFzvM4VNrlhbEa6RaL3xZMZDnXhucFQdO-zZoYoaO787QWF65XOtlsKwHgynrTdnn1iMHVOYXwGuuiPrTe5jBQUnA56Idv5N_nd5YFODjA5QoNOEu3K2BtRy6pUsXepBUb-vvytkWGnL46-wnYYPUWvUf-SOfPw4xBVUKngogh6HxqUm9qY2auPLWyeAT0NxJf_vWy5-wSNXUHN52TsnNWQsQS6eZiI4"/>
+<!-- Hover Play Overlay -->
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-primary/20 backdrop-blur-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[32px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<!-- Progress Bar -->
+<div class="absolute bottom-0 left-0 w-full h-[3px] bg-surface-container-highest">
+<div class="h-full bg-primary" style="width: 65%;"></div>
+</div>
+</div>
+<!-- Content Below -->
+<h3 class="font-label-md text-label-md text-on-surface line-clamp-2 mb-1 group-hover:text-primary transition-colors">Mastering React Hooks &amp; Context API</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">movie</span>
+                            12 min left
+                        </p>
+</div>
+<!-- Card 2 (Course) -->
+<div class="relative flex-none w-[280px] md:w-[320px] group cursor-pointer snap-start">
+<div class="relative w-full aspect-video rounded-lg overflow-hidden mb-unit bg-surface-container-low transition-transform duration-300 group-hover:scale-[1.02]">
+<img alt="Course thumbnail" class="w-full h-full object-cover" data-alt="An abstract, dark 3D render of intersecting geometric glass planes. The edges catch subtle electric indigo light against a pitch-black background. It conveys complex system architecture in a premium, minimalist visual style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdzjSWH6ozDBYR8-Yw1fn_FHuvbmKH4Xdem3QB9N7I7cJ8ElgLO8HnjnjRnNkSnVVc7Wfw2czDsXptdrgmJUZO1JH8uXk1_XCsLSm1XUPfwlhkigpAhCpucU0MVwtkx51aN8U5r6QQoBEPYgYH4fEPdmfXtpOh--brs5-XgqtLIHw59KqM8B-7Lq7QwKSXpx4vTPdyS3XUq8A4YCTuJKWRsWNQASF5OlIiCJTQ1nwLzN9m11_WwfQDREApd5szsryNKWssXtvXfa8"/>
+<!-- Hover Play Overlay -->
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-primary/20 backdrop-blur-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[32px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<!-- Progress Bar -->
+<div class="absolute bottom-0 left-0 w-full h-[3px] bg-surface-container-highest">
+<div class="h-full bg-primary" style="width: 20%;"></div>
+</div>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface line-clamp-2 mb-1 group-hover:text-primary transition-colors">Design Systems Fundamentals</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">menu_book</span>
+                            Course · 2h 45m left
+                        </p>
+</div>
+<!-- Card 3 (Video) -->
+<div class="relative flex-none w-[280px] md:w-[320px] group cursor-pointer snap-start">
+<div class="relative w-full aspect-video rounded-lg overflow-hidden mb-unit bg-surface-container-low transition-transform duration-300 group-hover:scale-[1.02]">
+<img alt="Video thumbnail" class="w-full h-full object-cover" data-alt="A clean, minimalist workspace view from above on a dark grey desk. A tablet displays wireframes illuminated with faint indigo lines. Highly organized, sophisticated aesthetic emphasizing digital design process." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDP9NiShMhYN7T5eDUMt3InCoVdnh8USdYBBqCexJJ5_5JMR0gkOEe5FyAFtltVBmr-91FEZuuW9mg741X_Kfq9BxazU43-yNorVaiQf586I8Jbbz7w7cBOhrcnB1PxhYU31xC_2UismTrOE61ZUBzZuPR2rtd7OGnebnp2uVQsqcqT_EAa3SKm_jD_S6Jn24NQhrWiouonLjdfUt2Tb1N8bsl9aHt_r0hkg3mN8sMyuzKagl_DmRKqfWpuoJ0vGHaCPjPG6RQGEhE"/>
+<!-- Hover Play Overlay -->
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-primary/20 backdrop-blur-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[32px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<!-- Progress Bar -->
+<div class="absolute bottom-0 left-0 w-full h-[3px] bg-surface-container-highest">
+<div class="h-full bg-primary" style="width: 85%;"></div>
+</div>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface line-clamp-2 mb-1 group-hover:text-primary transition-colors">Figma Advanced Prototyping</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">movie</span>
+                            4 min left
+                        </p>
+</div>
+</div>
+</section>
+<!-- Row 2: Because you're learning web design -->
+<section class="w-full">
+<h2 class="font-title-md text-title-md text-on-surface mb-stack-md">Because you're learning web design</h2>
+<div class="flex gap-gutter overflow-x-auto hide-scroll pb-4 snap-x snap-mandatory">
+<!-- Card 1 (Course) -->
+<div class="relative flex-none w-[280px] md:w-[320px] group cursor-pointer snap-start">
+<div class="relative w-full aspect-video rounded-lg overflow-hidden mb-unit bg-surface-container-low transition-transform duration-300 group-hover:scale-[1.02]">
+<img alt="Course thumbnail" class="w-full h-full object-cover" data-alt="An abstract, dark 3D render of intersecting geometric glass planes. The edges catch subtle electric indigo light against a pitch-black background. It conveys complex system architecture in a premium, minimalist visual style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdzjSWH6ozDBYR8-Yw1fn_FHuvbmKH4Xdem3QB9N7I7cJ8ElgLO8HnjnjRnNkSnVVc7Wfw2czDsXptdrgmJUZO1JH8uXk1_XCsLSm1XUPfwlhkigpAhCpucU0MVwtkx51aN8U5r6QQoBEPYgYH4fEPdmfXtpOh--brs5-XgqtLIHw59KqM8B-7Lq7QwKSXpx4vTPdyS3XUq8A4YCTuJKWRsWNQASF5OlIiCJTQ1nwLzN9m11_WwfQDREApd5szsryNKWssXtvXfa8"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-primary/20 backdrop-blur-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[32px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute top-2 left-2 bg-surface/80 backdrop-blur-md px-2 py-1 rounded text-[10px] font-medium text-on-surface border border-outline-variant/30">Course</div>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface line-clamp-2 mb-1 group-hover:text-primary transition-colors">Advanced CSS Layouts</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">menu_book</span>
+                            Course · 4h 30m
+                        </p>
+</div>
+<!-- Card 2 (Course) -->
+<div class="relative flex-none w-[280px] md:w-[320px] group cursor-pointer snap-start">
+<div class="relative w-full aspect-video rounded-lg overflow-hidden mb-unit bg-surface-container-low transition-transform duration-300 group-hover:scale-[1.02]">
+<img alt="Course thumbnail" class="w-full h-full object-cover" data-alt="A clean, minimalist workspace view from above on a dark grey desk. A tablet displays wireframes illuminated with faint indigo lines. Highly organized, sophisticated aesthetic emphasizing digital design process." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDP9NiShMhYN7T5eDUMt3InCoVdnh8USdYBBqCexJJ5_5JMR0gkOEe5FyAFtltVBmr-91FEZuuW9mg741X_Kfq9BxazU43-yNorVaiQf586I8Jbbz7w7cBOhrcnB1PxhYU31xC_2UismTrOE61ZUBzZuPR2rtd7OGnebnp2uVQsqcqT_EAa3SKm_jD_S6Jn24NQhrWiouonLjdfUt2Tb1N8bsl9aHt_r0hkg3mN8sMyuzKagl_DmRKqfWpuoJ0vGHaCPjPG6RQGEhE"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-primary/20 backdrop-blur-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[32px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute top-2 left-2 bg-surface/80 backdrop-blur-md px-2 py-1 rounded text-[10px] font-medium text-on-surface border border-outline-variant/30">Course</div>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface line-clamp-2 mb-1 group-hover:text-primary transition-colors">Interaction Design Mastery</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">menu_book</span>
+                            Course · 6h 15m
+                        </p>
+</div>
+<!-- Card 3 (Course) -->
+<div class="relative flex-none w-[280px] md:w-[320px] group cursor-pointer snap-start">
+<div class="relative w-full aspect-video rounded-lg overflow-hidden mb-unit bg-surface-container-low transition-transform duration-300 group-hover:scale-[1.02]">
+<img alt="Course thumbnail" class="w-full h-full object-cover" data-alt="A dark, moody macro shot of a sleek computer keyboard with an electric indigo glow emitting from beneath the keys. Minimalist, premium tech aesthetic with shallow depth of field. High contrast between deep blacks and the single accent color." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzginz7CPNLxY1obH5lvHPI8Tkwc5taQlKjJpaBEKe3GqLFzvM4VNrlhbEa6RaL3xZMZDnXhucFQdO-zZoYoaO787QWF65XOtlsKwHgynrTdnn1iMHVOYXwGuuiPrTe5jBQUnA56Idv5N_nd5YFODjA5QoNOEu3K2BtRy6pUsXepBUb-vvytkWGnL46-wnYYPUWvUf-SOfPw4xBVUKngogh6HxqUm9qY2auPLWyeAT0NxJf_vWy5-wSNXUHN52TsnNWQsQS6eZiI4"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-primary/20 backdrop-blur-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[32px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute top-2 left-2 bg-surface/80 backdrop-blur-md px-2 py-1 rounded text-[10px] font-medium text-on-surface border border-outline-variant/30">Course</div>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface line-clamp-2 mb-1 group-hover:text-primary transition-colors">Responsive Typography</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">menu_book</span>
+                            Course · 2h 20m
+                        </p>
+</div>
+</div>
+</section>
+<!-- Row 3: Recommended for you -->
+<section class="w-full">
+<div class="flex items-center gap-3 mb-stack-md">
+<h2 class="font-title-md text-title-md text-on-surface">Recommended for you</h2>
+<span class="bg-primary-container text-on-primary-container text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">Picked for you</span>
+</div>
+<div class="flex gap-gutter overflow-x-auto hide-scroll pb-4 snap-x snap-mandatory">
+<!-- Card 1 (Movie/Series - 2:3 vertical) -->
+<div class="relative flex-none w-[180px] md:w-[220px] group cursor-pointer snap-start">
+<div class="relative w-full aspect-[2/3] rounded-lg overflow-hidden mb-unit bg-surface-container-low transition-transform duration-300 group-hover:scale-[1.02]">
+<img alt="Movie poster" class="w-full h-full object-cover" data-alt="Abstract vertical poster design featuring intersecting glowing neon blue lines on a deep black background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdzjSWH6ozDBYR8-Yw1fn_FHuvbmKH4Xdem3QB9N7I7cJ8ElgLO8HnjnjRnNkSnVVc7Wfw2czDsXptdrgmJUZO1JH8uXk1_XCsLSm1XUPfwlhkigpAhCpucU0MVwtkx51aN8U5r6QQoBEPYgYH4fEPdmfXtpOh--brs5-XgqtLIHw59KqM8B-7Lq7QwKSXpx4vTPdyS3XUq8A4YCTuJKWRsWNQASF5OlIiCJTQ1nwLzN9m11_WwfQDREApd5szsryNKWssXtvXfa8"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-primary/20 backdrop-blur-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[32px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface line-clamp-2 mb-1 group-hover:text-primary transition-colors">The Design Story</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">movie</span>
+                            Documentary · 1h 45m
+                        </p>
+</div>
+<!-- Card 2 (Movie/Series - 2:3 vertical) -->
+<div class="relative flex-none w-[180px] md:w-[220px] group cursor-pointer snap-start">
+<div class="relative w-full aspect-[2/3] rounded-lg overflow-hidden mb-unit bg-surface-container-low transition-transform duration-300 group-hover:scale-[1.02]">
+<img alt="Movie poster" class="w-full h-full object-cover" data-alt="Vertical portrait of a sleek computer desk setup with deep shadows and moody lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzginz7CPNLxY1obH5lvHPI8Tkwc5taQlKjJpaBEKe3GqLFzvM4VNrlhbEa6RaL3xZMZDnXhucFQdO-zZoYoaO787QWF65XOtlsKwHgynrTdnn1iMHVOYXwGuuiPrTe5jBQUnA56Idv5N_nd5YFODjA5QoNOEu3K2BtRy6pUsXepBUb-vvytkWGnL46-wnYYPUWvUf-SOfPw4xBVUKngogh6HxqUm9qY2auPLWyeAT0NxJf_vWy5-wSNXUHN52TsnNWQsQS6eZiI4"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-primary/20 backdrop-blur-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[32px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface line-clamp-2 mb-1 group-hover:text-primary transition-colors">Code &amp; Creativity</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">movie</span>
+                            Series · 6 Episodes
+                        </p>
+</div>
+<!-- Card 3 (Movie/Series - 2:3 vertical) -->
+<div class="relative flex-none w-[180px] md:w-[220px] group cursor-pointer snap-start">
+<div class="relative w-full aspect-[2/3] rounded-lg overflow-hidden mb-unit bg-surface-container-low transition-transform duration-300 group-hover:scale-[1.02]">
+<img alt="Movie poster" class="w-full h-full object-cover" data-alt="Vertical poster displaying minimalist wireframes on a dark tablet device." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDP9NiShMhYN7T5eDUMt3InCoVdnh8USdYBBqCexJJ5_5JMR0gkOEe5FyAFtltVBmr-91FEZuuW9mg741X_Kfq9BxazU43-yNorVaiQf586I8Jbbz7w7cBOhrcnB1PxhYU31xC_2UismTrOE61ZUBzZuPR2rtd7OGnebnp2uVQsqcqT_EAa3SKm_jD_S6Jn24NQhrWiouonLjdfUt2Tb1N8bsl9aHt_r0hkg3mN8sMyuzKagl_DmRKqfWpuoJ0vGHaCPjPG6RQGEhE"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-primary/20 backdrop-blur-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[32px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface line-clamp-2 mb-1 group-hover:text-primary transition-colors">Future of UI</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">movie</span>
+                            Movie · 2h 10m
+                        </p>
+</div>
+<!-- Card 4 (Movie/Series - 2:3 vertical) -->
+<div class="relative flex-none w-[180px] md:w-[220px] group cursor-pointer snap-start">
+<div class="relative w-full aspect-[2/3] rounded-lg overflow-hidden mb-unit bg-surface-container-low transition-transform duration-300 group-hover:scale-[1.02]">
+<img alt="Movie poster" class="w-full h-full object-cover" data-alt="Cinematic shot of a modern design workspace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqxS3-DX84fKHtwN3VB6vpx1YRhQTuKFDBsJ9g3N56882JPnMQVhI7lrgrejqBN8ui87mrP2BDjtNHFr9z5ePsKzABET54SFoyKTMa7fSdlnmBHKSDqlZU3sIOTb0T-RQYZ9ys3e7Llxqp_m0A1vH9zCQjg-AWnvr5q6MLbjYJjzWOD2GYUM87AGkJXft93nQUQ1G0VFTEe7KgvjqA1gcvMsSrTlw0_LxNSpiSyUAKegZC3XhHj9MBNIpDR9s3qOljmyk5l5FKD5w"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-primary/20 backdrop-blur-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[32px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface line-clamp-2 mb-1 group-hover:text-primary transition-colors">Inside the Pixel</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">movie</span>
+                            Documentary · 55m
+                        </p>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Navigation Bottom shell for mobile -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 bg-surface/90 backdrop-blur-md border-t border-surface-dim h-16 flex items-center justify-around px-2 pb-safe">
+<a class="flex flex-col items-center gap-1 p-2 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-sm text-[10px]">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-on-surface-variant hover:text-on-surface" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="font-label-sm text-[10px]">Learning</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-on-surface-variant hover:text-on-surface" href="#">
+<span class="material-symbols-outlined">live_tv</span>
+<span class="font-label-sm text-[10px]">Live</span>
+</a>
+<a class="flex flex-col items-center gap-1 p-2 text-on-surface-variant hover:text-on-surface" href="#">
+<span class="material-symbols-outlined">video_library</span>
+<span class="font-label-sm text-[10px]">Library</span>
+</a>
+</nav>
+</body></html>
